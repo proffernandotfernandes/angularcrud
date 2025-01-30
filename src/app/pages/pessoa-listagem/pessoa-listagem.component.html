@@ -1,0 +1,30 @@
+<div class="content-container">
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nome</th>
+                <th>Sobrenome</th>
+                <th>Data de Nascimento</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for (pessoa of listaPessoas; track pessoa){
+            <tr>
+                <td>{{pessoa.id}}</td>
+                <td>{{pessoa.nome}}</td>
+                <td>{{pessoa.sobrenome}}</td>
+                <td>{{pessoa.dtNascimento}}</td>
+                <td>
+                  <button class="btn-editar" [routerLink]="['alterar', pessoa.id]">Editar</button>
+                  <button class=" btn-excluir">Excluir</button>
+                </td>
+            </tr>
+            }
+
+        </tbody>
+
+    </table>
+    <button class="btn-incluir">Incluir</button>
+</div>

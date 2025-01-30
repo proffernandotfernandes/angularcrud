@@ -1,22 +1,2 @@
 <app-header></app-header>
-
-<h1>Olá {{title}}!</h1>
-<h3>Bem-vindos ao angular!</h3>
-
-<form>
-    <label for="nome" placeholder="Digite seu nome">Nome:</label>
-    <input class="input-simples" id="nome" name="nome" type="text" (keyup)="onKeyUp($event)" [(ngModel)]="nome" />
-
-    <label for="sobrenome" placeholder="Digite seu sobrenome">Sobrenome:</label>
-    <input class="input-simples" id="sobrenome" name="sobrenome" type="text" [(ngModel)]="sobrenome" />
-
-    <button class="input-submeter" [disabled]="botaoDesabilitado" (click)="onBotaoClicado()">
-        {{ textoBotao }}
-    </button>
-
-    @if(mensagem){
-    <div class="mensagem">{{mensagem}}</div>
-    }
-</form>
-
 <router-outlet />

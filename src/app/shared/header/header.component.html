@@ -5,7 +5,7 @@
         }
         <ul class="navbar-list">
             @for (item of itensMenu; track item){
-            <li class="navbar-item">
+            <li class="navbar-item" routerLink="{{item.link}}">
                 <a>{{item.label}}</a>
             </li>
             }
