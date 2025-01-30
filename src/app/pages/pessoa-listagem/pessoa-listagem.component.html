@@ -18,7 +18,7 @@
                 <td>{{pessoa.dtNascimento}}</td>
                 <td>
                   <button class="btn-editar" [routerLink]="['alterar', pessoa.id]">Editar</button>
-                  <button class=" btn-excluir">Excluir</button>
+                  <button class=" btn-excluir" (click)="excluir(pessoa.id!)">Excluir</button>
                 </td>
             </tr>
             }
@@ -26,5 +26,5 @@
         </tbody>
 
     </table>
-    <button class="btn-incluir">Incluir</button>
+    <button class="btn-incluir" routerLink="/pessoas/incluir">Incluir</button>
 </div>

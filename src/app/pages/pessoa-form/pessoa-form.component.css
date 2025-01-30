@@ -37,6 +37,16 @@ form {
     margin-bottom: 20px;
 }
 
+.input-id {
+    width: 10%;
+    box-sizing: border-box;
+    padding: 8px 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
 .input-submeter {
     padding: 10px;
     font-size: 16px;

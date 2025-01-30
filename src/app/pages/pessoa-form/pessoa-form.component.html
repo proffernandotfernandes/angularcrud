@@ -1,15 +1,21 @@
 <div class="content-container">
     <h1>{{ titulo }}</h1>
     <form>
+        <label for="input-id">ID</label><br>
+        <input class="input-id" id="input-id" name="input-id" placeholder="Digite o id" type="text" [(ngModel)]="pessoa.id"/>
+
         <label for="input-nome">Nome</label><br>
         <input class="input-simples" id="input-nome" name="input-nome" placeholder="Digite o primeiro nome"
-            type="text" />
+            type="text"  [(ngModel)]="pessoa.nome"/>
+
         <label for="input-sobrenome">Sobrenome</label><br>
         <input class="input-simples" id="input-sobrenome" name="input-sobrenome" placeholder="Digite o sobrenome"
-            type="text" />
+            type="text"  [(ngModel)]="pessoa.sobrenome"/>
+
         <label for="input-nascimento">Escolha a data de nascimento</label><br>
-        <input class="input-simples" id="input-nascimento" name="input-nascimento" type="date" />
-        <button class="input-submeter">
+        <input class="input-simples" id="input-nascimento" name="input-nascimento" type="date" [(ngModel)]="pessoa.dtNascimento"/>
+
+        <button class="input-submeter" (click)="submeter()">
             Cadastrar
         </button>
     </form>
