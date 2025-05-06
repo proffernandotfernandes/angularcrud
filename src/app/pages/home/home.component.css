@@ -6,6 +6,14 @@
     text-align: left;
 }
 
-h1{
+h1 {
     margin-left: 20px;
+}
+
+.card-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 16px;
+    margin-bottom: 40px;
 }
